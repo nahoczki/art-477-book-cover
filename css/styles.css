@@ -1,0 +1,186 @@
+/* All CSS styles go here */
+
+@font-face {
+    font-family: ParcPlace;
+    src: url('../fonts/Parc Place.ttf');
+}
+
+@font-face {
+    font-family: OPTIBelwe-Medium;
+    src: url('../fonts/OPTIBelwe-Medium.otf');
+}
+
+@font-face {
+    font-family: gonzo;
+    src: url('../fonts/gonzo.ttf');
+}
+
+html {
+    background-color: whitesmoke;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div {
+    transform-style: preserve-3d;
+}
+
+.time-img {
+    position: absolute;
+    top: 150px;
+    left: 230px;
+}
+
+.file-img {
+    position: absolute;
+    top: 512px;
+    left: 50px;
+}
+
+.thingy-img {
+    position: absolute;
+    top: 325px;
+    left: 50px;
+}
+
+.publisher-img {
+    position: absolute;
+    top: 590px;
+    left: 0;
+}
+
+.book-cover {
+    position: relative;
+    height: 600px;
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 100px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    transition: transform 0.5s;
+}
+
+.section {
+    display: flex;
+    transform: translateZ(2rem);
+    flex-direction: row;
+    width: 100%;
+}
+
+.top-line {
+    height: 10px;
+    background: black;
+    margin-bottom: 10px;
+}
+
+.circles {
+    display: flex;
+    width: 100px;
+    height: 80px;
+}
+
+.title-text {
+    font-size: 50px;
+    transform: translateZ(3rem);
+}
+
+.gradient-boxes {
+    display: flex;
+    transform-style: preserve-3d;
+    flex-direction: row;
+}
+
+.gradient-box {
+    width: 29px;
+    height: 29px;
+    background-color: black;
+    transform: translateZ(5rem);
+}
+
+.slightly-angled-lines {
+    align-items: end;
+    display: flex;
+    flex-direction: column;
+    transform: rotate(-0.7deg);
+    width: 92%;
+    gap: 3px;
+    margin-right: 20px;
+}
+
+.slightly-angled-line {
+    height: 1px;
+    width: 70%;
+    background-color: black;
+}
+
+.slightly-angled-line:nth-child(odd) {
+    transform: translateZ(2rem);
+}
+
+.author-text {
+    text-align: right;
+    transform: translateZ(6rem);
+}
+
+.tamara {
+    font-family: ParcPlace;
+    padding-top: 40px;
+    margin-left: 90px;
+    font-size: 23px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateZ(1rem);
+}
+
+.novel-text {
+    position: relative;
+    font-family: ParcPlace;
+    font-size: 11px;
+}
+
+.novel-letter {
+    position: absolute;
+}
+
+.vertical-lines {
+    width: 80%;
+    padding-right: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: baseline;
+    gap: 4.25px;
+}
+
+.gradient-line {
+    background: linear-gradient(90deg, white, black);
+    height: 50px;
+    margin-right: 20px;
+    margin-left: 10px;
+    width: 100%;
+}
+
+.mac-rep-shop {
+    font-size: 12px;
+    position: absolute;
+    right: -80px;
+    bottom: 165px;
+    transform: rotate(-90deg) translateZ(6rem);
+}
+
+.sweet-text {
+    top: 20px;
+    font-family: OPTIBelwe-Medium;
+    font-weight: 800;
+    font-size: 17px;
+    position: absolute;
+    transform: rotate(180deg) translateZ(6rem);
+}

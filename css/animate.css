@@ -1,0 +1,84 @@
+
+
+.book-cover:hover {
+    transform: rotateY(35deg) rotateX(35deg);
+}
+
+.gradient-line {
+    background-size: 200% 200%;
+    animation: gradient 7s ease infinite;
+}
+
+.top-line {
+    animation: animated-top-lines 4s ease-in-out infinite;
+}
+
+.vertical-lines {
+    animation: animated-vertical-lines 6s ease-in-out infinite;
+}
+
+.slightly-angled-line {
+    animation: animated-slightly-angled-lines 2s ease-in-out infinite;
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+@keyframes animated-top-lines {
+    0% {
+        margin-bottom: 3.5%;
+    }
+    50% {
+        margin-bottom: -2.5%;
+    }
+    100% {
+        margin-bottom: 3.5%;
+    }
+}
+
+@keyframes animated-vertical-lines {
+    0% {
+        gap: 4.25px;
+    }
+    50% {
+        gap: 0;
+    }
+    100% {
+        gap: 4.25px;
+    }
+}
+
+@keyframes animated-slightly-angled-lines {
+    0% {
+        transform: rotate(-0.7deg) translateZ(3rem);
+    }
+    50% {
+        transform: rotate(1.4deg) translateZ(0rem);
+    }
+    100% {
+        transform: rotate(-0.7deg) translateZ(3rem);
+    }
+}
+
+@keyframes rotating-circle {
+    0% {
+        transform: translateZ(0rem);
+    }
+    50% {
+        transform: translateZ(5rem);
+    }
+    100% {
+        transform: translateZ(0rem);
+    }
+}
