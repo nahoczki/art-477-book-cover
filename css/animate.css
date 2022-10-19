@@ -1,6 +1,6 @@
 
 
-.book-cover:hover {
+.hover-div:hover .book-cover {
     transform: rotateY(35deg) rotateX(35deg);
 }
 

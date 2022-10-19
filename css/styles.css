@@ -19,6 +19,14 @@ html {
     background-color: whitesmoke;
 }
 
+.hover-div {
+    position: absolute;
+    background-color: transparent;
+    height: 600px;
+    width: 400px;
+    padding: 40px;
+}
+
 .container {
     width: 100%;
     height: 100vh;
@@ -56,7 +64,9 @@ div {
 }
 
 .book-cover {
-    position: relative;
+    position: absolute;
+    left: 0;
+    top: 0;
     height: 600px;
     width: 400px;
     background-color: white;
@@ -64,6 +74,7 @@ div {
     box-shadow: 5px 5px 100px rgba(0, 0, 0, 0.1);
     padding: 40px;
     transition: transform 0.5s;
+    z-index: -1;
 }
 
 .section {
